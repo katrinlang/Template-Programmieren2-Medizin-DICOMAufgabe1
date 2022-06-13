@@ -63,6 +63,7 @@ Nach diesen Anpassungen müssten Sie die dcm4che-Bibliothek in Ihrem Java-Projek
 Der folgende Codeabschnitt zeigt Ihnen, wie die Bilddaten aus einer DICOM-Datei eingelesen werden können:
 
 ```java
+import org.dcm4che3.imageio.plugins.dcm.DicomImageReadParam;
 import javax.imageio.ImageIO;
 import javax.imageio.ImageReader;
 import javax.imageio.stream.ImageInputStream;
