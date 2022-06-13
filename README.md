@@ -72,12 +72,18 @@ import java.io.File;
 
 public class DICOMTest {
     public static void main(String[] args) {
+    
         ImageIO.scanForPlugins();
         ImageReader ir = ImageIO.getImageReadersByFormatName("DICOM").next();
         DicomImageReadParam param = (DicomImageReadParam) ir.getDefaultReadParam();
-        ImageInputStream iis = ImageIO.createImageInputStream(new File("data/angiogram1.DCM"));
-        ir.setInput(iis);
-        BufferedImage image = ir.read(1, param);
+        try{
+            ImageInputStream iis = ImageIO.createImageInputStream(new File("data/angiogram1.DCM"));
+            ir.setInput(iis);
+            BufferedImage image = ir.read(1, param);
+        }
+        catch(Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 }
 ```
