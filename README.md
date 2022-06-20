@@ -54,6 +54,8 @@ Für das Einlesen der in den DICOM-Dateien enthaltenen Bilddaten in diversen For
 
 Nach diesen Anpassungen müssten Sie die dcm4che-Bibliothek in Ihrem Java-Projekt verwenden können.
 
+BITTE BEACHTEN SIE, dass der Java Library Path gesetzt sein muss, BEVOR Sie das Programm ausführen. Dies stellen Sie sicher, indem Sie Ihr Programm ausschließlich über den grünen Pfeil neben dem run-Eintrag in build.gradle starten (vielleicht erinnern Sie sich, dass wir in der HIV-Aufgabe ähnlich verfahren sind, um Kommandozeilenargumente an das Programm zu übergeben).
+
 ## Einlesen von DICOM-Dateien
 
 ### Hintergrundinformationen
